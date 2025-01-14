@@ -63,7 +63,7 @@ header {
 .nav {
     position: fixed;
     top: 0;
-    left: -250px; 
+    left: -345px; 
     width: 345px;
     height: 800px;
     background-color: orange; 
@@ -76,7 +76,7 @@ header {
 }
 
 .overlay {
-    position: absolute;
+    position:relative;
     top: 0;
     left: 0;
     width: 1920px;
