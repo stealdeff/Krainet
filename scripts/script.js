@@ -1,9 +1,18 @@
-// function nextSection(sectionNumber) {
-//    
-//     const sections = document.querySelectorAll('.section');
-//     sections.forEach(section => {
-//         section.style.display = 'none';
-//     });
-//     const selectedSection = document.getElementById(`section${sectionNumber}`);
-//     selectedSection.style.display = 'block';
-// }
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    const overlay = document.createElement('div');
+
+    overlay.classList.add('overlay');
+    document.body.appendChild(overlay);
+
+    hamburger.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', function() {
+        nav.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+});

@@ -9,27 +9,34 @@
 <body>
     <div class="wrapper">
         <header id="header">
-            
-            <button onclick="nextSection(1)">Начать</button>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line long"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#section1">Секция 1</a></li>
+                    <li><a href="#section2">Секция 2</a></li>
+                    <li><a href="#section3">Секция 3</a></li>
+                    <li><a href="#section4">Секция 4</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="section" id="section1">
-        
-            <button onclick="nextSection(2)">Далее</button>
+            <h1>Секция 1</h1>
         </div>
         <div class="section" id="section2">
-        
-            <button onclick="nextSection(3)">Далее</button>
+            <h1>Секция 2</h1>
         </div>
         <div class="section" id="section3">
-        
-            <button onclick="nextSection(4)">Далее</button>
+            <h1>Секция 3</h1>
         </div>
         <div class="section" id="section4">
-    
-            <button onclick="nextSection(1)">Назад на начало</button>
+            <h1>Секция 4</h1>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
