@@ -16,25 +16,23 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.classList.remove('active');
     });
 });
-const socialNetworks = [
-    { src: "images/SocialNetworks/Github.svg", alt: "Github" },
-    { src: "images/SocialNetworks/Instagram.svg", alt: "Instagram" },
-    { src: "images/SocialNetworks/Facebook.svg", alt: "Facebook" }
-];
+// const socialNetworks = [
+//     { src: "images/SocialNetworks/Github.svg", alt: "Github" },
+//     { src: "images/SocialNetworks/Instagram.svg", alt: "Instagram" },
+//     { src: "images/SocialNetworks/Facebook.svg", alt: "Facebook" }
+// ];
 
-function populateImages(containerId) {
-    const container = document.getElementById(containerId);
-    socialNetworks.forEach(network => {
-        const img = document.createElement('img');
-        img.src = network.src;
-        img.alt = network.alt;
-        img.className = 'networks__image';
-        container.appendChild(img);
-    });
-}
-
-// Заполняем изображения в обоих контейнерах
-populateImages('image-container-nav');
-populateImages('image-container-footer');
+// function populateImages(containerId) {
+//     const container = document.getElementById(containerId);
+//     socialNetworks.forEach(network => {
+//         const img = document.createElement('img');
+//         img.src = network.src;
+//         img.alt = network.alt;
+//         img.className = 'networks__image';
+//         container.appendChild(img);
+//     });
+// }
+// populateImages('image-container-nav');
+// populateImages('image-container-footer');
 
 

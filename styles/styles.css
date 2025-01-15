@@ -69,7 +69,7 @@ html, body {
     left: -345px; 
     width: 345px;
     height: 800px;
-    background-color: orange; 
+    background-color: #FFA501; 
     transition: left 0.3s ease; 
     z-index: 5; 
 }
@@ -101,9 +101,7 @@ html, body {
     transform: rotate(-90deg);    
     transform-origin: left top;   
     white-space: nowrap;          
-    
-    /* width: 338px;
-    height: 24px; */
+
 }
 
 .networks__title {
@@ -120,10 +118,10 @@ html, body {
     width: 70px; 
     margin: 3px 0; 
 }
-.networks__image-container{
+.image-container-nav{
     margin-left: 15px;
 }
-.networks__image{
+#networks .networks__image{
     margin-left: 15px;
     width: 20px;
     height: 19px;
@@ -131,6 +129,13 @@ html, body {
 }
 .section{
     background-color: aqua;
+}
+.nav .networks__image{
+    margin-top: 650px;
+    margin-left: 20px;
+    width: 25px;
+    height: 24px;
+    transform: rotate(90deg);
 }
 /* Facebook
 
