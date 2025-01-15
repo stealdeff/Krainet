@@ -8,32 +8,40 @@
 </head>
 <body>
     <div class="wrapper">
-        <header id="header">
+        <header class="header" id="header">
             <div class="hamburger" id="hamburger">
-                <div class="line"></div>
-                <div class="line long"></div>
-                <div class="line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line hamburger__line--long"></div>
+                <div class="hamburger__line"></div>
             </div>
             <nav class="nav" id="nav">
-                <ul>
-                    <li><a href="#section1">Секция 1</a></li>
-                    <li><a href="#section2">Секция 2</a></li>
-                    <li><a href="#section3">Секция 3</a></li>
-                    <li><a href="#section4">Секция 4</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#section1">Секция 1</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#section2">Секция 2</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#section3">Секция 3</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#section4">Секция 4</a></li>
                 </ul>
             </nav>
+            <div class="networks" id="networks">
+                <p class="networks__title">Социальные сети</p>
+                <div class="networks__line"></div>
+                <div class="networks__image-container">
+                    <img src="images/SocialNetworks/Github.svg" alt="Github" class="networks__image"/>
+                    <img src="images/SocialNetworks/Instagram.svg" alt="Instagram" class="networks__image"/>
+                    <img src="images/SocialNetworks/Facebook.svg" alt="Facebook" class="networks__image"/>
+                </div>  
         </header>
         <div class="section" id="section1">
-            <h1>Секция 1</h1>
+            <h1 class="section__title">Секция 1</h1>
         </div>
         <div class="section" id="section2">
-            <h1>Секция 2</h1>
+            <h1 class="section__title">Секция 2</h1>
         </div>
         <div class="section" id="section3">
-            <h1>Секция 3</h1>
+            <h1 class="section__title">Секция 3</h1>
         </div>
         <div class="section" id="section4">
-            <h1>Секция 4</h1>
+            <h1 class="section__title">Секция 4</h1>
         </div>
     </div>
 
