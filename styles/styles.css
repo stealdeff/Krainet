@@ -263,19 +263,46 @@ html, body {
     top: 1px;
     left: -25px;
   }
+
+  #section2{
+    margin-top: -300px; 
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
   .experience-text-with-circle {
     flex-flow: row;
     display: flex;
     align-items:center;
+     margin-left: 180px; 
   }
   .experience-text__heading {
     position: relative;
     top: 0px;
     left: -45px;
   }
-  .experience__title{
+  .experience-text__title{
     font-weight: 700;
     font-size: 36px;
   }
+  .experience-text__line {
+    height: 3px; 
+    background: #FFA501; 
+    width: 62px; 
+    margin: 20px 180px; 
+}
 
+.experience-text__subsections{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
 
+.experience-text__education,.experience-text__work {
+    flex: 5;
+    padding: 20px;
+    margin: 0 160px;
+}
