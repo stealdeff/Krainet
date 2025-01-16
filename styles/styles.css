@@ -160,6 +160,7 @@ html, body {
 }
 .section{
     background-color: #6b3939;
+    
 }
 .nav .networks__image{
     margin-top: 230px;
@@ -191,6 +192,7 @@ html, body {
     top: 1px;
     left: -25px;
   }
+  
   .circle {
     min-width: 36px;
     min-height: 36px;
@@ -216,18 +218,64 @@ html, body {
     background: rgb(255, 165, 1);
     margin-left: -30px;
   }
+  .text-block-with-circle{
+    flex-flow: row;
+    display: flex;
+    align-items:center;
+  }
+  .image-text-block__heading{
+    position: relative;
+    top: 1px;
+    left: -25px;
+  }
   .image-text-block__text {
     margin-top: -300px;
   }
   .image-text-block__image{
-    margin-left: -80px;
+    margin-left: 25px;
     margin-right: 70px;
   }
   .image-text-block {
     display: flex;
     align-items: center; 
 }
-.image-text-block__description{
+
+.image-text-block__text{
     font: weight 500px;
     font-size: 14px;
 }
+.image-text-block__name{
+    margin-left: -4px;
+    font-size: 36px;
+}
+.image-text-block__line {
+    height: 3px; 
+    background: #FFA501; 
+    width: 62px; 
+    margin: 3px 0; 
+}
+.image-text-block__p{
+    margin-top: 10px;
+}
+
+.image-text-block__image {
+    position: relative;
+    top: 1px;
+    left: -25px;
+  }
+  .experience-text-with-circle {
+    flex-flow: row;
+    display: flex;
+    align-items:center;
+  }
+  .experience-text__heading {
+    position: relative;
+    top: 0px;
+    left: -45px;
+  }
+  .experience__title{
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+
