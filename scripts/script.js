@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         nav.classList.remove('active');
         overlay.classList.remove('active');
     });
+
+    const closeButton = document.querySelector('.nav__close');
+    closeButton.addEventListener('click', function() {
+        nav.classList.remove('active'); 
+        overlay.classList.remove('active'); 
+    });
 });
 // const socialNetworks = [
 //     { src: "images/SocialNetworks/Github.svg", alt: "Github" },
