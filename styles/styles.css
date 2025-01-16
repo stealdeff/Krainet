@@ -264,7 +264,8 @@ html, body {
     left: -25px;
   }
 
-  #section2{
+
+#section2, .experience-text{
     margin-top: -300px; 
     flex-flow: column;
     display: flex;
@@ -272,12 +273,12 @@ html, body {
     align-items: center;
 }
 
-
   .experience-text-with-circle {
     flex-flow: row;
     display: flex;
     align-items:center;
-     margin-left: 180px; 
+    margin-top: 540px;
+   margin-left: 45px;
   }
   .experience-text__heading {
     position: relative;
@@ -292,13 +293,14 @@ html, body {
     height: 3px; 
     background: #FFA501; 
     width: 62px; 
-    margin: 20px 180px; 
+    margin: 20px 190px; 
 }
 
 .experience-text__subsections{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    align-items: flex-start;
 }
 
 .experience-text__education,.experience-text__work {
