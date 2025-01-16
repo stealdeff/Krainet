@@ -159,7 +159,7 @@ html, body {
     transform: rotate(90deg);
 }
 .section{
-    background-color: aqua;
+    background-color: #6b3939;
 }
 .nav .networks__image{
     margin-top: 230px;
@@ -179,6 +179,7 @@ html, body {
     color: #000000;
     text-align: left;
 }
+
 .text-with-circle {
     flex-flow: row;
     display: flex;
@@ -215,3 +216,18 @@ html, body {
     background: rgb(255, 165, 1);
     margin-left: -30px;
   }
+  .image-text-block__text {
+    margin-top: -300px;
+  }
+  .image-text-block__image{
+    margin-left: -80px;
+    margin-right: 70px;
+  }
+  .image-text-block {
+    display: flex;
+    align-items: center; 
+}
+.image-text-block__description{
+    font: weight 500px;
+    font-size: 14px;
+}
