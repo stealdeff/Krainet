@@ -34,6 +34,7 @@ html, body {
     width: 1140px; 
     padding: 0 16px;
     margin: 0 auto; 
+    
 }
 
 .section {
@@ -126,7 +127,7 @@ html, body {
 }
 .networks {
     position: relative;
-    top: 222px;
+    top: 100px;
     left: -700px;
     display: flex;               
     align-items: center;         
@@ -169,18 +170,20 @@ html, body {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
+.header__wrapper{
+    width: 1140px; 
+    padding: 0 16px;
+    margin: 0 auto; 
+}
+.greeting{
+    color: #000000;
+    text-align: left;
+}
 .text-with-circle {
     flex-flow: row;
     display: flex;
-    align-items: center;
+    align-items:center;
+     
   }
   .text-with-circle h4 {
     position: relative;
@@ -194,7 +197,9 @@ html, body {
     background: #ffa501;
   }
 
-  
+.greeting__buttons{
+    margin: 30px;
+}
   .btn {
     font-weight: 700;
     font-size: 14px;
@@ -208,4 +213,5 @@ html, body {
   .btn_orange {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background: rgb(255, 165, 1);
+    margin-left: -30px;
   }
