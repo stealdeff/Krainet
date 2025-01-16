@@ -72,19 +72,22 @@ html, body {
     background-color: #FFA501; 
     transition: left 0.3s ease; 
     z-index: 5; 
+    
 }
  
 .nav__list {
     list-style-type: circle; 
     padding-left: 20px;      
     margin: 140px 20px;
+    text-align: left;
+   
 }
 .nav__item::marker {
     color: black; 
-    font-size: 1.9em;
+    font-size: 3em;
 }
 .nav__item {
-    margin: 10px 0;          
+    margin-left:20px ;    
 }
     
 .nav.active {
@@ -92,7 +95,11 @@ html, body {
 }
 .nav__link {
     text-decoration: none;
-    color: #000;          
+    color:#FFFFFF;         
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
 }
 .overlay {
     position: relative; 
@@ -147,7 +154,7 @@ html, body {
     background-color: aqua;
 }
 .nav .networks__image{
-    margin-top: 250px;
+    margin-top: 150px;
     margin-left: 20px;
     width: 25px;
     height: 24px;
@@ -155,4 +162,17 @@ html, body {
 }
 
 
+
+/* ПРО МЕНЯ
+
+position: absolute;
+width: 128px;
+height: 36px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
 
