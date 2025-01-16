@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
     box-sizing: border-box; 
     margin: 0; 
@@ -8,6 +9,7 @@ html, body {
     width: 100%; 
     height: 100%; 
     overflow-x: hidden; 
+    font-family: "Open Sans", sans-serif;
 }
 
 .header {
@@ -25,6 +27,7 @@ html, body {
     position: relative; 
     left: 50%; 
     margin-left: -50vw; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .wrapper {
@@ -77,27 +80,24 @@ html, body {
  
 .nav__list {
     list-style-type: circle; 
-    padding-left: 20px;      
-    margin: 140px 20px;
+    padding-left: 40px;      
+    margin: 100px 20px;
     text-align: left;
    
 }
 .nav__item::marker {
     color: black; 
-    font-size: 3em;
+    font-size: 2.6em;
 }
-.nav__item {
+ .nav__item {
     margin-left:20px ;    
-}
-    
+} 
 .nav.active {
     left: 0; 
 }
 .nav__link {
     text-decoration: none;
     color:#FFFFFF;         
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
 }
@@ -129,8 +129,6 @@ html, body {
 
 .networks__title {
     margin-right: 25px;   
-    font-family: 'Poppins';
-    font-style:normal;
     font-weight: 700;
     font-size: 21px;
     color: black; 
@@ -154,25 +152,13 @@ html, body {
     background-color: aqua;
 }
 .nav .networks__image{
-    margin-top: 150px;
+    margin-top: 230px;
     margin-left: 20px;
-    width: 25px;
-    height: 24px;
+    width: 20px;
+    height: 19px;
     transform: rotate(90deg);
+    align-items: center;
 }
 
 
-
-/* ПРО МЕНЯ
-
-position: absolute;
-width: 128px;
-height: 36px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-/* identical to box height */
 
