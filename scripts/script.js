@@ -21,8 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
         nav.classList.remove('active'); 
         overlay.classList.remove('active'); 
     });
-});
 
+    const navLinks = document.querySelectorAll('.nav__link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    });
+});
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
     document.getElementById('nameError').innerText = '';
