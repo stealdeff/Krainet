@@ -22,23 +22,55 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.classList.remove('active'); 
     });
 });
-// const socialNetworks = [
-//     { src: "images/SocialNetworks/Github.svg", alt: "Github" },
-//     { src: "images/SocialNetworks/Instagram.svg", alt: "Instagram" },
-//     { src: "images/SocialNetworks/Facebook.svg", alt: "Facebook" }
-// ];
 
-// function populateImages(containerId) {
-//     const container = document.getElementById(containerId);
-//     socialNetworks.forEach(network => {
-//         const img = document.createElement('img');
-//         img.src = network.src;
-//         img.alt = network.alt;
-//         img.className = 'networks__image';
-//         container.appendChild(img);
-//     });
-// }
-// populateImages('image-container-nav');
-// populateImages('image-container-footer');
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    document.getElementById('nameError').innerText = '';
+    document.getElementById('emailError').innerText = '';
+    document.getElementById('messageError').innerText = '';
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
 
+    let valid = true;
+    if (name === '') {
+        document.getElementById('nameError').innerText = 'Пожалуйста, введите ваше имя.';
+        valid = false;
+    }
+    if (email === '') {
+        document.getElementById('emailError').innerText = 'Пожалуйста, введите вашу почту.';
+        valid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+        document.getElementById('emailError').innerText = 'Введите корректный адрес электронной почты.';
+        valid = false;
+    }
+    if (message === '') {
+        document.getElementById('messageError').innerText = 'Пожалуйста, введите ваше сообщение.';
+        valid = false;
+    }
+    if (valid) {
+        const data = {
+            name: name,
+            email: email,
+            message: message
+        };
 
+        fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Успешно отправлено:', data);
+            alert('Ваше сообщение успешно отправлено!');
+            document.getElementById('contactForm').reset(); 
+        })
+        .catch((error) => {
+            console.error('Ошибка:', error);
+            alert('Произошла ошибка при отправке сообщения.');
+        });
+    }
+});

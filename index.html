@@ -181,13 +181,40 @@
                         <div class="contacts__line"></div>
                         <h4 class="contacts__h4">Любым удобным для вас способом</h4>
                         <div class="contacts__image-container">
-                            <img src="images/Contacts/Facebook.svg" alt="Facebook" class="contacts-container__image"/>
-                            <img src="images/Contacts/Telegram.svg" alt="Telegram" class="contacts-container__image"/>
-                            <img src="images/Contacts/Instagram.svg" alt="Instagram" class="contacts-container__image"/>
-                        </div> 
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <img src="images/Contacts/Facebook.svg" alt="Facebook" class="contacts-container__image" />
+                            </a>
+                            <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
+                                <img src="images/Contacts/Telegram.svg" alt="Telegram" class="contacts-container__image" />
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                <img src="images/Contacts/Instagram.svg" alt="Instagram" class="contacts-container__image" />
+                            </a>
+                        </div>
+                        <h4 class="contacts__h4-2">Или оставьте ваши данные и я сама вам напишу:</h4>
                         </div>
             </div>
 
+<form id="contactForm">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            <div class="error-message" id="nameError"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Ваша почта:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="emailError"></div>
+        </div>
+    </div>
+    
+    <label for="message">Ваше сообщение:</label>
+    <textarea id="message" name="message" required></textarea>
+    <div class="error-message" id="messageError"></div>
+    
+    <button class="contactForm__button" type="submit">Отправить сообщение</button>
+</form>
         </div>
     </div>
 
