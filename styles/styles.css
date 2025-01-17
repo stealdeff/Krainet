@@ -324,6 +324,24 @@ html, body {
     background-color: #FFA501;
     border-radius: 50%; 
 }
+/* Горизонтальные линии */
+.experience-text__education .horizontal-line,
+.experience-text__work .horizontal-line {
+    content: '';
+    position: absolute;
+    width: 43px; /* Ширина горизонтальной линии */
+    height: 2px; /* Высота линии */
+    background-color: #000000; /* Цвет линии */
+}
+.experience-text__education .horizontal-line {
+    top: 110px; 
+    left: -15px; 
+}
+
+.experience-text__work .horizontal-line {
+    top: 110px; 
+    left: -15px; 
+}
 
 .experience-text__education::before {
     left: -20px; 
@@ -332,8 +350,6 @@ html, body {
 .experience-text__work::before {
     left: -20px; 
 }
-
-
 .experience-text__education::after,
 .experience-text__work::after {
     content: '';
@@ -344,7 +360,6 @@ html, body {
     height: 343px;
     background-color: #000000; 
 }
-
 .experience-text__education::after {
     left: -15px; 
 }
@@ -352,6 +367,24 @@ html, body {
 .experience-text__work::after {
     left: -15px; 
 }
-
+.experience__education{
+    margin-top: 40px;
+    margin-left: 8px;
+}
+.experience__education::after {
+    display: none; 
+}
+.education-text-with-circle{
+    flex-flow: row;
+    display: flex;
+    align-items:center;
+     
+  }
+  .education-text__icon{
+    position: relative;
+    top: 8px;
+    left: -20px;
+  }
+  
 
 
