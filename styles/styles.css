@@ -374,16 +374,30 @@ html, body {
 .experience__education::after {
     display: none; 
 }
-.education-text-with-circle{
+.circle-wrapper{
     flex-flow: row;
     display: flex;
     align-items:center;
      
   }
-  .education-text__icon{
+  .education-text-icon__University{
     position: relative;
     top: 8px;
     left: -20px;
+  }
+  .work-text-icon__Developer{
+    position: relative;
+    top: 8px;
+    left: -20px;
+  }
+  .education-title{
+    margin-left: 50px;
+    margin-top: -35px;
+  }
+  .education-subtitle{
+    margin-left: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
   }
   
 
