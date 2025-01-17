@@ -293,7 +293,8 @@ html, body {
     height: 3px; 
     background: #FFA501; 
     width: 62px; 
-    margin: 20px 190px; 
+    margin: 20px 190px   40px; 
+
 }
 
 .experience-text__subsections{
@@ -301,10 +302,56 @@ html, body {
     justify-content: space-between;
     padding: 10px;
     align-items: flex-start;
+    position: relative;
 }
 
 .experience-text__education,.experience-text__work {
-    flex: 5;
+    flex: 1;
+    width: 433px;
     padding: 20px;
-    margin: 0 160px;
+    margin: 0 40px;
+    position: relative;
 }
+
+.experience-text__education::before,
+.experience-text__work::before {
+    content: '';
+    position: absolute;
+    margin-top: 35px;
+    top: -5px; 
+    width: 14px; 
+    height: 15px; 
+    background-color: #FFA501;
+    border-radius: 50%; 
+}
+
+.experience-text__education::before {
+    left: -20px; 
+}
+
+.experience-text__work::before {
+    left: -20px; 
+}
+
+
+.experience-text__education::after,
+.experience-text__work::after {
+    content: '';
+    position: absolute;
+    top: 45px;
+    bottom: 0; 
+    width: 2px; 
+    height: 343px;
+    background-color: #000000; 
+}
+
+.experience-text__education::after {
+    left: -15px; 
+}
+
+.experience-text__work::after {
+    left: -15px; 
+}
+
+
+
