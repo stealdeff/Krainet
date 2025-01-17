@@ -403,35 +403,26 @@ html, body {
     top: 8px;
     left: -20px;
 }
-  .education-title{
+  .experience-text-title{
     margin-left: 50px;
     margin-top: -35px;
   }
-  .education-subtitle{
+  .experience-text-subtitle{
     margin-left: 50px;
     font-weight: 500;
     margin-bottom: 10px;
   }
-  .education-description{
+  .experience-text-description{
     font-size: 13px;
     font-weight: 450;
   }
 
-  .education-udemy-title{
-    margin-left: 50px;
-    margin-top: -35px;
-  }
-  .education-udemy-subtitle{
-    margin-left: 50px;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  .education-udemy-description{
-    font-size: 13px;
-    font-weight: 450;
-  }
   .experience__education-udemy{
     margin-top: -20px;
+    margin-left: 8px;
+  }
+  .work-text-with-circle{
+    margin-top: 40px;
     margin-left: 8px;
   }
 
