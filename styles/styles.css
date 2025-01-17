@@ -263,8 +263,6 @@ html, body {
     top: 1px;
     left: -25px;
   }
-
-
 #section2, .experience-text{
     margin-top: -300px; 
     flex-flow: column;
@@ -421,4 +419,74 @@ html, body {
     margin-top: -20px;
     margin-left: 8px;
   }
+
+
+
+
+
+  .contacts {
+    display: flex;
+    align-items: center; 
+}
+  .contacts-block-with-circle{
+    flex-flow: row;
+    display: flex;
+    align-items:center;
+  }
+  .contacts__heading{
+    position: relative;
+    top: 1px;
+    left: -25px;
+  }
+  .contacts__description{
+    margin-top: -350px;
+  }
+  .contacts__text {
+    margin-top: -300px;
+    font: weight 500px;
+    font-size: 14px;
+  }
+  .contacts__image{
+    margin-left: 25px;
+    margin-right: 70px;
+  }
+
+.contacts__name{
+    margin-left: -4px;
+    font-size: 36px;
+}
+.contacts__line {
+    height: 3px; 
+    background: #FFA501; 
+    width: 62px; 
+    margin: 3px 0; 
+}
+.contacts__h4{
+    margin-top: 10px;
+}
+
+.contacts__image {
+    position: relative;
+    top: 1px;
+    left: -25px;
+  }
+  .contacts__image-container {
+    display: flex; 
+    
+    align-items: center; 
+    gap: 25px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.contacts-container__image{
+    width: 31px;
+    height: 30px; 
+    transition: transform 0.3s; 
+}
+
+.contacts-container__image:hover {
+    transform: rotate(90deg) scale(1.1);
+}
+
 
